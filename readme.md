@@ -41,9 +41,9 @@ Operators:
 
 ## Running the Pipeline
 1. Start Airflow on VM: 
-        nohup airflow standalone > airflow.log 2>&1 &
+        nohup airflow standalone > airflow.log 
 2. Open UI:
-        http://<VM-IP>:8080
+        http://virtual machine IP:8080
 3. Trigger DAG:
         load_and_transform
 
