@@ -1,19 +1,19 @@
-**Global Health Data Pipeline (Airflow + BigQuery)**
-#Overview
+# Global Health Data Pipeline (Airflow + BigQuery)
+## Overview
 This project implements an end‑to‑end ELT pipeline on Google Cloud to securely ingest global health data and transform it into country‑specific datasets for analytics and reporting. Apache Airflow orchestrates the workflow, while Google BigQuery performs data processing and storage. The pipeline demonstrates core data engineering concepts including ingestion, orchestration, transformation, dependency management, and warehouse modeling.
 
 ## Architecture
 Source → Storage → Orchestration → Warehouse → Transform 
 Global CSV → GCS → Airflow → BigQuery (staging) → BigQuery (transform)
 
-##Objectives
+## Objectives
 1. Load global health CSV data into BigQuery
 2. Ensure pipeline runs only when source file exists
 3. Transform dataset into country‑specific tables
 4. Demonstrate Airflow orchestration patterns
 5. Build scalable ELT architecture on GCP
 
-##Tech Stack
+## Tech Stack
 1. Cloud: Google Cloud Platform (GCP)
 2. Storage: Google Cloud Storage (GCS)
 3. Warehouse: BigQuery
